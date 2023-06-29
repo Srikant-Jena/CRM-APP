@@ -33,7 +33,7 @@ from .models import Lead
 #     return render(request, "leads/lead_create.html", context)
 
 
-def home_page(request):
+def lead_list(request):
     #return HttpResponse("Hello world!")
     leads = Lead.objects.all()
     context = {
@@ -41,7 +41,7 @@ def home_page(request):
         
         }
 
-    return render(request,"second_page.html",context)
+    return render(request,"leads/lead_list.html",context)
 
 
 
