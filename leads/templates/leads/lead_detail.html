@@ -21,12 +21,10 @@
         </style>
     </head>
     <body>
-        <h1>This is all of our leads</h1>
-        {% for lead in leads %}
-            <div class="lead">
-                <a href="/leads/{{ lead.pk}}/">{{ lead.first_name }} {{ lead.last_name }}</a>. Age: {{ lead.age }}
-            </div>
-        {% endfor %}
+        <a href ="/leads">Go back to leads</a>
+        <hr/>
+        <h1>This is the details of {{lead.first_name}}</h1>
+        <p> This person's age:{{lead.age}}</p>
         
     </body>
 </html>
